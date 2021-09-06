@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Kwitter Message page</title>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<button onclick="logout()" id="logout" class="glyphicon glyphicon-log-out btn btn-danger"><a style="margin: 0px;font-family: 'Quicksand', sans-serif; padding: 5px; text-decoration: none; color: whitesmoke;">Logout</a></button>
+	<h1 class="header">
+		<img src="Ribble.jpg" class="logo">&nbsp;&nbsp;<p id="ribble-title" style="color: black;display: inline;">Ribble</p>
+	</h1>
+	<div class="container">
+		<center>
+			<div style="text-align: left;margin-bottom: 70px;"> </div>
+		</center>
+	</div>
+
+	<center>
+		<div class="input_div_message_page"><br>
+			<label>Send:</label>
+			<input type="text" id="MessageInput" style="width: 50%;" class="form-control">
+			<button style="width: 25%;" onclick="sendmessage()" class="btn btn-success">Send</button>
+			<br>
+			<br>
+		</div>
+	</center>
+
+	<script src="ribble_page.js"></script>
+</body>
+
+</html>

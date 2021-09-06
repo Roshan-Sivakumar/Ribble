@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ribble</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="ribble.js"></script>
+</head>
+
+<body>
+	<h1 class="header">
+		<img src="Ribble.jpg" class="logo">&nbsp;&nbsp;<p id="ribble-title" style="color: black;display: inline;">Ribble</p>
+	</h1>
+	<center>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="login_div" class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+			<br>
+			<h3>Made For The Developers, By The Developers</h3>
+			<h4>Solve your Coding Doubts</h4>
+			<div class="form-group">
+				<label>User Name:</label>
+				<input id="username" placeholder="Type Your Username" type="text" class="form-control">
+			</div>
+			<button onclick="login()" id="login_button" class="btn btn-primary">Log in</button>
+			<br><br>
+			<div id="invalid"></div>
+			<br>
+		</div>
+	</center>
+</body>
+
+</html>
